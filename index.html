@@ -354,7 +354,7 @@ $(document).ready(function(){
 		// 300之前标题、导航、内容背景、内容动画
 		if (windowTop <= 300) {
 			// 标题，改字体大小
-			var chillFont = 98 - windowTop / 300 * 8;
+			var chillFont = 118 - windowTop / 300 * 8;
 			$("#chill").css("fontSize", chillFont);
 			var chillOpa = 0.4 - windowTop / 300 * 0.4;
 			$("#chill").css("opacity", chillOpa);
@@ -376,7 +376,7 @@ $(document).ready(function(){
 		};
 		// 600之后所有动画
 		if (windowTop > 600) {
-			$("#chill").css("fontSize", "90px");
+			$("#chill").css("fontSize", "110px");
 			$("#nav").css("top", "130px");
 			$("#introCon").css("top", "130px");
 			$("#wordCon").css("opacity", "0");
