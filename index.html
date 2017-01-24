@@ -1,8 +1,392 @@
 <!DOCTYPE html>
 <html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>chill</title>
+<link rel="stylesheet" href="css/index.css">
+<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Montserrat'>
+<script src="./anime/anime.min.js"></script>
+<script src="./anime/click.js"></script>
+<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<p>蠢蠢舞大王，汪汪汪！</p>
+<!--     <canvas class="fireworks"></canvas>-->
+
+	<!-- 背景图 -->
+	<div class="imgBac" id="imgBac"></div>
+	<!-- 黑背景 -->
+	<div class="blackBac" id="blackBac"></div>
+	<!-- 联系信息块 -->
+	<div class="contactCon" id="contactCon">
+		<p class="contactTitle">get in touch</p>
+		<p class="contactDesc">
+			北京 · 深圳 · 澳大利亚
+			</br>
+			+86 13717728854
+		</p>
+	</div>
+	<div class="contentCon" style="position: fixed;">
+		<div class="loading" id="loading"></div>
+		<p class="chill" id="chill">We are Chill Studio</p>
+		<div class="nav" id="nav">
+			<div class="navTag">
+				<div class="leftLine opacity1"></div>
+				<div class="navTagWordCon">
+					<p class="firstWord active">介</p>
+					<p class="secondWord active">绍</p>
+				</div>		
+			</div>
+			<div class="navTag">
+				<div class="leftLine"></div>
+				<div class="navTagWordCon">
+					<p class="firstWord">作</p>
+					<p class="secondWord">品</p>
+				</div>		
+			</div>
+			<div class="navTag">
+				<div class="leftLine"></div>
+				<div class="navTagWordCon">
+					<p class="firstWord">团</p>
+					<p class="secondWord">队</p>
+				</div>		
+			</div>
+			<div class="navTag">
+				<div class="leftLine"></div>
+				<div class="navTagWordCon">
+					<p class="firstWord">服</p>
+					<p class="secondWord">务</p>
+				</div>		
+			</div>
+			<div class="navTag">
+				<div class="leftLine"></div>
+				<div class="navTagWordCon">
+					<p class="firstWord">联</p>
+					<p class="secondWord">系</p>
+				</div>		
+			</div>
+		</div>
+		<div class="introCon" id="introCon">
+			<div class="wordCon" id="wordCon">
+				<p class="introWord"><a href="http://chill-studio.com/test">我们打造超越你我期望之物</a></p>
+				<p class="introWordEng">We are a newborn internet design agency, we forge that which surpasses not only your </br>expectations, but also ours</p>
+			</div>
+		</div>
+	</div>
+	<div class="contentCon">
+		<!-- 右侧内容块 -->
+		<div class="rightCenCon" id="rightCenCon">
+			<!-- 作品块盒子 -->
+			<div class="worksCon">
+				<p class="worksTitle">COMPLETED WORKS</p>
+				<!-- 作品块1 -->
+				<div class="workTag">
+					<img src="img/workBanImg.png" class="workBanImg">
+					<div class="workBanCen">
+						<div class="workLogo">
+							<svg width="100%" height="100%" viewBox="0 0 73 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style = "display:block;">
+							    <title>智行logo</title>
+							    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							        <g id="Chill-Studio-Website-2" transform="translate(-507.000000, -310.000000)" fill="#FFFFFF">
+							            <g id="Group-12" transform="translate(467.000000, 19.000000)">
+							                <g id="Group-4" transform="translate(0.000000, 75.000000)">
+							                    <g id="Group-7">
+							                        <path d="M72.4765178,247.853379 L72.4765178,233.154639 L40.8064147,233.154639 L40.8064147,247.853379 L72.4765178,247.853379 L72.4765178,247.853379 Z M72.7697595,231.981672 L72.7697595,216.586483 L58.6941581,216.586483 L58.6941581,231.981672 L72.7697595,231.981672 L72.7697595,231.981672 Z M46.3046964,216 L41.4662085,216 L40,221.20504 L44.838488,221.20504 L45.3516609,219.372279 L46.5246277,219.372279 L46.5246277,222.671249 L40.6597938,222.671249 L40.6597938,225.237113 L46.5246277,225.237113 L46.5246277,226.190149 L40.3665521,227.876289 L40.3665521,232.568156 L49.163803,229.85567 L57.5211913,232.348225 L57.5211913,227.729668 L51.9495991,226.190149 L51.9495991,225.237113 L57.3745704,225.237113 L57.3745704,222.671249 L51.9495991,222.671249 L51.9495991,219.372279 L57.0813288,219.372279 L57.0813288,216.806415 L46.0847652,216.806415 L46.3046964,216 L46.3046964,216 Z M67.0515464,235.720504 L67.0515464,239.166094 L46.231386,239.166094 L46.231386,235.720504 L67.0515464,235.720504 L67.0515464,235.720504 Z M46.231386,245.32417 L46.231386,241.731959 L67.0515464,241.731959 L67.0515464,245.32417 L46.231386,245.32417 L46.231386,245.32417 Z M64.1191294,229.415808 L64.1191294,219.152348 L67.3447881,219.152348 L67.3447881,229.415808 L64.1191294,229.415808 L64.1191294,229.415808 Z M111.770905,219.5189 L111.770905,216.953036 L90.510882,216.953036 L90.510882,219.5189 L111.770905,219.5189 L111.770905,219.5189 Z M102.31386,245.39748 L94.836197,245.39748 L94.836197,247.92669 L107.738832,247.92669 L107.738832,229.635739 L112.504009,229.635739 L112.504009,227.069874 L89.3379152,227.069874 L89.3379152,229.635739 L102.31386,229.635739 L102.31386,245.39748 L102.31386,245.39748 Z M83.1065292,216 L77.6082474,224.797251 L83.3997709,224.797251 L89.0446735,216 L83.1065292,216 L83.1065292,216 Z M82.8132875,226.41008 L76.8018328,236.67354 L80.3940435,236.67354 L80.3940435,248 L85.8190149,248 L85.8190149,233.887743 L84.4994273,233.887743 L88.7514318,226.41008 L82.8132875,226.41008 L82.8132875,226.41008 Z" id="zhixing-logo"></path>
+							                    </g>
+							                </g>
+							            </g>
+							        </g>
+							    </g>
+							</svg>
+						</div>
+						<div class="toWork">
+							浏览网站
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class = "toWorkSvg">
+								<g fill="none" fill-rule="evenodd" transform="rotate(90 12 12)">
+								    <rect width="24" height="24"/>
+								    <polygon fill="#FFFFFF" points=".5 5 4 0 7.5 5" transform="translate(8 9)"/>
+								</g>
+							</svg>
+						</div>
+					</div>
+					<div class="workDescCon">
+						<div class="signTag">品牌VI设计</div>
+						<div class="signTag">App设计</div>
+						<div class="signTag">跨平台响应式网站设计</div>
+						<div class="signTag">前端开发</div>
+						<p class="workDesc">
+							通过全方位的用户研究，设计团队发现人人贷在平台功能的转变、信任感和安全感的建立、服务个性化与服务升级、用户引导与教育以及产品细节处理上面临很多机遇和挑战。例如：
+								</br>
+								</br>
+							理财产品用户希望收益处于合理区间，过高的收益反而会让他们觉得不安全。利用设计体现平台对安全的关注或进行实物化的保障等则可以提高用户对平台的信任感。
+						</p>
+						<div style="clear:both;"></div>
+					</div>
+				</div><!-- 作品块1结束 -->
+				<!-- 作品块2 -->
+				<div class="workTag">
+					<img src="img/workBanImg.png" class="workBanImg">
+					<div class="workBanCen">
+						<div class="workLogo">
+							<img src="img/GenesisLogo@2x.png" width="156px" height="32px">
+						</div>
+						<div class="toWork">
+							浏览网站
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class = "toWorkSvg">
+								<g fill="none" fill-rule="evenodd" transform="rotate(90 12 12)">
+								    <rect width="24" height="24"/>
+								    <polygon fill="#FFFFFF" points=".5 5 4 0 7.5 5" transform="translate(8 9)"/>
+								</g>
+							</svg>
+						</div>
+					</div>
+					<div class="workDescCon">
+						<div class="signTag">品牌VI设计</div>
+						<div class="signTag">桌面端网站Landing Page设计</div>
+						<div class="signTag">前端开发</div>
+						<p class="workDesc">
+							对于一个初创公司，品牌应该作为一个功能载体，清晰传达产品属性。
+								</br>
+								</br>
+							品牌在今天的发展再也不是单纯印刷在VI手册中的静态的标志，现在的品牌必须要适应各种屏幕，各种传播手段；尤其是以产品主导的品牌，最主要的场景便是产品应用图标，如何让用户第一时间清楚知道产品的类型比品牌有什么深层内涵更重要。
+						</p>
+						<div style="clear:both;"></div>
+					</div>
+				</div><!-- 作品块2结束 -->
+			</div>
+			<!-- 团队块盒子 -->
+			<div class="teamCon" id="teamCon">
+				<p class="teamTitle">TEAM MEMBERS</p>
+				<div class="teamTag">
+					<div class="teamMemTag">
+						<div class="teamMemHead">
+							<img src="img/qiuhao.png" class="teamMemHeadImg">
+							<div class="teamMemDesc">
+								<p class="teamMemName">
+									Chillli
+								</p>
+								<div class="borderBott"></div>
+								<p class="teamMemJob">
+									设计师，文案
+								</p>
+							</div>
+						</div>
+						<p class="teamMemWord">
+							在只有一个设计师的 Chill Studio，他的设计才华想不是首屈一指也是很难的
+						</p>
+					</div>
+					<div class="teamMemTag">
+						<div class="teamMemHead">
+							<img src="img/skyshit.png" class="teamMemHeadImg">
+							<div class="teamMemDesc">
+								<p class="teamMemName">
+									Skyshit
+								</p>
+								<div class="borderBott"></div>
+								<p class="teamMemJob">
+									半栈攻城犬，团队对外发言犬
+								</p>
+							</div>
+						</div>
+						<p class="teamMemWord">
+							汪汪汪！（这个简短的描述是当事犬要求的）
+						</p>
+					</div>
+					<div class="teamMemTag">
+						<div class="teamMemHead">
+							<img src="img/haiyan.png" class="teamMemHeadImg">
+							<div class="teamMemDesc">
+								<p class="teamMemName">
+									海燕
+								</p>
+								<div class="borderBott"></div>
+								<p class="teamMemJob">
+									高级Web前端攻城母狮
+								</p>
+							</div>
+						</div>
+						<p class="teamMemWord">
+							能和设计师Chillli配合的前端不会差。有时即便Chillli不愿用天马行空的创意为难她，她也会主动求虐，可怜啊
+						</p>
+					</div>
+					<div class="teamMemTag">
+						<div class="teamMemHead">
+							<img src="img/van.png" class="teamMemHeadImg">
+							<div class="teamMemDesc">
+								<p class="teamMemName">
+									Arno Van Easley
+								</p>
+								<div class="borderBott"></div>
+								<p class="teamMemJob">
+									究极Android兽
+								</p>
+							</div>
+						</div>
+						<p class="teamMemWord">
+							和他女朋友都是南航软件工程研究生毕业，一段段优雅简洁的 bug 代码就是他曾经的情书
+						</p>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+				<p class="teamTitle">CONSULTANTS</p>
+				<div class="teamTag">
+					<div class="teamMemTag">
+						<div class="teamMemHead">
+							<img src="img/bahaa.png" class="teamMemHeadImg">
+							<div class="teamMemDesc">
+								<p class="teamMemName">
+									Bahaa, 戴鑫茹
+								</p>
+								<div class="borderBott"></div>
+								<p class="teamMemJob">
+									乐视产品经理
+								</p>
+							</div>
+						</div>
+						<p class="teamMemWord">
+							Chillli说我们不需要产品经理，因为有他在，但话说回来，有个爱吹毛求疵的顾问也没什么坏处
+						</p>
+					</div>
+					<div class="teamMemTag">
+						<div class="teamMemHead">
+							<img src="img/enbo.png" class="teamMemHeadImg">
+							<div class="teamMemDesc">
+								<p class="teamMemName">
+									Enbo, 柏恩
+								</p>
+								<div class="borderBott"></div>
+								<p class="teamMemJob">
+									悉尼大学人鸡交互专业毕业
+								</p>
+							</div>
+						</div>
+						<p class="teamMemWord">
+							小学上到一半跑去了澳洲，如今在太平洋另一头生活的时间已经超过了在天朝生活的时间
+						</p>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+			</div>
+			<!-- 服务块盒子 -->
+			<div class="serviceCon" id="serviceCon">
+				<p class="worksTitle">SERVICES, SPEED & PRICING</p>
+				<div class="workTag">
+					<img src="img/workBanImg.png" class="workBanImg">
+					<div class="workBanCen">
+						<div class="fuwu">
+							服务
+						</div>
+						<p class="fuwuWord">
+							我们为网站和 App 提供完整的设计服务（品牌、产品、交互、视觉），也提供前后端实现服务
+								</br>
+							我们力求超越你的期望，以及我们自己的期望
+						</p>
+					</div>
+					<div class="serviceDescCon">
+						<div class="speed">
+							<p class="speedTitle">速度</p>
+							<p class="speedWord">
+								通过全方位的用户研究，设计团队发现人人贷在平台功能的转变、信任感和安全感的建立、服务个性化与服务升级、用户引导与教育以及产品细节处理上面临很多机遇和挑战。例如：
+									</br>
+									</br>
+								理财产品用户希望收益处于合理区间，过高的收益反而会让他们觉得不安全。利用设计体现平台对安全的关注或进行实物化的保障等则可以提高用户对平台的信任感。
+							</p>
+						</div>
+						<div class="money">
+							<p class="speedTitle">定价</p>
+							<p class="speedWord">
+								因工作难度和工作量差异较大，我们的服务价格也视具体情况而定，预付款为最终定价的50%。
+							</p>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+
+<script type="text/javascript">
+// 页面开始动画
+function ani(){
+	// loading
+	setTimeout('$("#loading").css({"width":"72px","height":"72px"})',0);
+	setTimeout('$("#loading").css("opacity", 0)',0);
+	// 标题
+	setTimeout('$("#chill").css("top", "120px")',300);
+	setTimeout('$("#chill").css("opacity", 0.4)',300);
+	// 内容背景
+	setTimeout('$("#introCon").css("top", "291px")',800);
+	// 内容
+	setTimeout('$("#wordCon").css("opacity", 1)',1200);
+	// 导航
+	setTimeout('$("#nav").css("top", "291px")',1600);
+	setTimeout('$("#nav").css("opacity", 1)',1600);
+};
+$(document).ready(function(){
+	// 内容块加一屏幕的高度
+	$("#rightCenCon").height($("#rightCenCon").height() + $(window).height() + 550);
+	// 内容块加一屏幕的top值
+	$("#rightCenCon").css("top", $(window).height() + 400);
+	// 取窗口的高度
+	//页面开始动画
+	ani();
+	// 窗口滚动
+	$(window).scroll(function() {
+		// 窗口上滑位置
+		var windowTop = $(window).scrollTop();
+		// 300之前标题、导航、内容背景、内容动画
+		if (windowTop <= 300) {
+			// 标题，改字体大小
+			var chillFont = 98 - windowTop / 300 * 8;
+			$("#chill").css("fontSize", chillFont);
+			var chillOpa = 0.4 - windowTop / 300 * 0.4;
+			$("#chill").css("opacity", chillOpa);
+			// 导航，改top值
+			var navTop = 291 - windowTop / 300 * 161;
+			$("#nav").css("top", navTop);
+			// 内容背景，改top值
+			var introConTop = 291 - windowTop / 300 * 161;
+			$("#introCon").css("top", introConTop);
+			// 内容，改透明度
+			var wordConOpa = 1 - windowTop / 300 * 0.2;
+			$("#wordCon").css("opacity", wordConOpa);
+		};
+		// 300到700之间内容动画
+		if (windowTop > 300 && windowTop <= 700) {
+			// 内容，改透明度
+			var wordConOpa = 0.8 - windowTop / 700 * 0.8;
+			$("#wordCon").css("opacity", wordConOpa);
+		};
+		// 700之后所有动画
+		if (windowTop > 700) {
+			$("#chill").css("fontSize", "90px");
+			$("#nav").css("top", "130px");
+			$("#introCon").css("top", "130px");
+			$("#wordCon").css("opacity", "0");
+		};
+		var lastTop = $("#rightCenCon").height() - 1100;
+		// 内容高度-550之前，黑背景、联系信息块动画
+		if (windowTop < lastTop) {
+			// 黑背景，改opacity
+       		$("#blackBac").css("opacity", "1");
+       		// 联系信息块，显示
+			$("#contactCon").hide();
+		};
+		// 内容高度-550之后，黑背景、联系信息块、内容背景动画
+		if (windowTop > lastTop) {
+			// 黑背景，改opacity
+       		$("#blackBac").css("opacity", "0.84");
+       		// 联系信息块，显示
+			$("#contactCon").show();
+			// 内容背景，改top值
+			var introConTop = 140 - (windowTop - lastTop);
+			$("#introCon").css("top", introConTop);
+			// 
+			$("#chill").css("opacity", 0.4);
+		};
+	});
+});
+</script>
 </body>
 </html>
