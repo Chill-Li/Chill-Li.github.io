@@ -282,7 +282,8 @@ a:active {
 	letter-spacing: 4px;
 }
 .intro .introWord{
-	font-family: Montserrat-Bold;
+	font-family: Montserrat;
+	font-weight: Bold;
 	height: 22px;
 	line-height: 22px;
 	font-size: 22px;
