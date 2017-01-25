@@ -443,6 +443,121 @@ a:active {
 .teamCon{
 }
 
+/*v1.1版团队板块>>>>>>>*/
+.ctnMemberList{
+  /*background-color: rgba(55,100,255,0.2);*/
+  margin-top:48px;
+  }
+
+.ctnMember{
+  position:relative;
+  width: 768px;
+  height: 216px;
+  background-color: #FFF;
+	box-shadow: 0 30px 60px  rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+  overflow: hidden; /*用作子元素的蒙版*/
+}
+.ctnMember:last-child{
+ margin-bottom: 0px;
+}
+
+.imgMember
+{ 
+  float:left;
+  width:60%;
+  height:100%;
+  background: url("https://www.sweetpunk.com/Public/Files/feed/select_people_15_501feeb4d0_5427de9694_9e23d469a8.jpg") center;
+  background-size:cover;
+  position: absolute;
+  left:0%;
+  transition: all 0.5s;
+}
+.overlayImg {
+  float:left;
+  position:absolute;
+  left:0;
+  top:0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to left, #ffffff, #ffffff 40%, rgba(255, 255, 255, 0.1)), linear-gradient(119deg, rgba(198, 182, 255, 0.5), rgba(86, 157, 255, 0.8) 50%, rgba(86, 157, 255, 0.8));
+  transition: all 0.5s;
+}
+.ctnNameAndUdl{
+  /*background-color:red;*/
+  /*display:inline-block;*/
+  /*float: left;*/
+  position: absolute;
+  top: 0px;
+  left: 424px;
+  margin-top:54px;
+  transition: all 0.5s;
+}
+.nameMember {
+  /*background-color:red;*/
+  height: 55px;
+  line-height: 55px;
+	opacity: 0.9;
+	font-family: Montserrat, sans-serif;
+	font-size: 40px;
+	font-weight: Bold;
+	color: #000000;
+  transition: all 0.5s;
+}
+.udlGradient {
+	height: 2px;
+	background-image: linear-gradient(271deg, #c6b6ff, #569dff); 
+  width:100%;
+  transition: all 0.5s;
+}
+.titleMember {
+  /*background-color:red;*/
+	height: 26px;
+  line-height: 26px;
+	opacity: 0.8;
+	font-size: 16px;
+	color: #000000;  float:left;
+position: absolute;
+  left: 424px;
+  top: 131px;
+  transition: all 0.5s;
+}
+.descMember {
+  /*height: auto;*/
+  /*background-color:red;*/
+  width:304px;
+  height:69px;
+  line-height: 23px;
+	opacity: 0;
+	font-size: 13px;
+	color: #000000;
+  position: absolute;
+  left: 424px;
+  top: 147px;
+  transition: all 0.5s;
+}
+
+.imgMember2
+{ width: 60%;
+  left: 40%;
+}
+.overlayImg2 {
+width:62%;
+left:38%;
+	background: linear-gradient(to right, #ffffff, #ffffff 4%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0)), linear-gradient(119deg, rgba(198, 182, 255, 0.5), rgba(86, 157, 255, 0.8));
+}
+.ctnNameAndUdl2{
+  left: 40px;
+}
+.titleMember2 {
+  left: 40px;
+}
+.descMember2 {
+  left: 40px;
+}
+
+/*v1.1版团队板块<<<<<<<<<*/
+
 .teamTag{
 	width: 768px;
 	background-color: white;
