@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="css/index.css">
 <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Montserrat" rel="stylesheet">
 <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
 
 </head>
 <body>
@@ -173,77 +174,53 @@
 			<!-- 团队块盒子 -->
 			<div class="teamCon" id="teamCon">
 				<p class="titleContainer">TEAM MEMBERS</p>
-				<div class="teamTag">
-					<div class="teamMemTag">
-						<div class="teamMemHead">
-							<img src="img/qiuhao.png" class="teamMemHeadImg">
-							<div class="teamMemDesc">
-								<p class="teamMemName">
-									Chillli
-								</p>
-								<div class="borderBott"></div>
-								<p class="teamMemJob">
-									设计师，文案
-								</p>
-							</div>
-						</div>
-						<p class="teamMemWord">
-							在只有一个设计师的 Chill Studio，他的设计才华想不是首屈一指也是很难的
-						</p>
-					</div>
-					<div class="teamMemTag">
-						<div class="teamMemHead">
-							<img src="img/skyshit.png" class="teamMemHeadImg">
-							<div class="teamMemDesc">
-								<p class="teamMemName">
-									Skyshit
-								</p>
-								<div class="borderBott"></div>
-								<p class="teamMemJob">
-									半栈攻城犬，团队对外发言犬
-								</p>
-							</div>
-						</div>
-						<p class="teamMemWord">
-							汪汪汪！（这个简短的描述是当事犬要求的）
-						</p>
-					</div>
-					<div class="teamMemTag">
-						<div class="teamMemHead">
-							<img src="img/haiyan.png" class="teamMemHeadImg">
-							<div class="teamMemDesc">
-								<p class="teamMemName">
-									海燕
-								</p>
-								<div class="borderBott"></div>
-								<p class="teamMemJob">
-									高级Web前端攻城母狮
-								</p>
-							</div>
-						</div>
-						<p class="teamMemWord">
-							能和设计师Chillli配合的前端不会差。有时即便Chillli不愿用天马行空的创意为难她，她也会主动求虐，可怜啊
-						</p>
-					</div>
-					<div class="teamMemTag">
-						<div class="teamMemHead">
-							<img src="img/van.png" class="teamMemHeadImg">
-							<div class="teamMemDesc">
-								<p class="teamMemName">
-									Arno Van Easley
-								</p>
-								<div class="borderBott"></div>
-								<p class="teamMemJob">
-									究极Android兽
-								</p>
-							</div>
-						</div>
-						<p class="teamMemWord">
-							和他女朋友都是南航软件工程研究生毕业，一段段优雅简洁的 bug 代码就是他曾经的情书
-						</p>
-					</div>
-					<div style="clear:both;"></div>
-				</div>
+<div class="ctnMemberList">
+  
+<div class="ctnMember" id="ctn1">
+    <div class="imgMember"></div>
+    <div class="overlayImg"></div>
+    <div class="ctnNameAndUdl">
+        <div class="nameMember">Alfredo</div>
+        <div class="udlGradient"></div>
+    </div>
+    <p class="titleMember">设计 / 文案 / 前端</p>
+    <p class="descMember">第一人介绍第一人介绍第一人介绍第一人介绍第一人介绍第一人介绍第一人介绍</p>
+</div>
+  
+  <div class="ctnMember" id="ctn2">
+    <div class="imgMember"></div>
+    <div class="overlayImg"></div>
+    <div class="ctnNameAndUdl">
+        <div class="nameMember">Rainer</div>
+        <div class="udlGradient"></div>
+    </div>
+    <p class="titleMember">设计 / 文案 / 前端</p>
+    <p class="descMember">第二人介绍第二人介绍第二人介绍第二人介绍第二人介绍第二人介绍第二人介绍第二人介绍第二人介绍</p>
+</div>
+
+  <div class="ctnMember" id="ctn3">
+    <div class="imgMember imgMember2"></div>
+    <div class="overlayImg overlayImg2"></div>
+    <div class="ctnNameAndUdl ctnNameAndUdl2">
+        <div class="nameMember">Maria</div>
+        <div class="udlGradient"></div>
+    </div>
+    <p class="titleMember titleMember2">设计 / 文案 / 前端</p>
+    <p class="descMember descMember2">第三人介绍第三人介绍第三人介绍第三人介绍第三人介绍第三人介绍第三人介绍第三人</p>
+</div>
+
+  <div class="ctnMember" id="ctn4">
+    <div class="imgMember imgMember2"></div>
+    <div class="overlayImg overlayImg2"></div>
+    <div class="ctnNameAndUdl ctnNameAndUdl2">
+        <div class="nameMember">Nietzsche</div>
+        <div class="udlGradient"></div>
+    </div>
+    <p class="titleMember titleMember2">哲人 / 诗人 / 疯人</p>
+    <p class="descMember descMember2">第三人介绍第三人介绍第三人介绍第三人介绍第三人介绍第三人介绍第三人介绍第三人</p>
+</div>
+
+</div>
 				<p class="titleContainer">CONSULTANTS</p>
 				<div class="teamTag">
 					<div class="teamMemTag">
@@ -339,7 +316,42 @@ function ani(){
 	setTimeout('$("#nav").css("top", "291px")',1600);
 	setTimeout('$("#nav").css("opacity", 1)',1600);
 };
+
 $(document).ready(function(){
+//团队板块-悬浮效果
+  $(".ctnMember").hover(
+    function() {
+      $(".imgMember", this).css("width", "64%");
+      $(".imgMember", this).css("left", "-2%");
+         $(".imgMember2", this).css("width", "64%");
+         $(".imgMember2", this).css("left", "38%");
+      //$(".overlayImg", this).css("width", "106%");
+      
+      $(".ctnNameAndUdl", this).css("top", "-16px");
+      //$(".nameMember").css("opacity","0");
+      $(".udlGradient", this).css("width", "304px");
+      $(".titleMember", this).css("top", "111px");
+      $(".titleMember", this).css("opacity", "0");
+      $(".descMember", this).css("top", "115px");
+      $(".descMember", this).css("opacity", "0.5");
+    },
+    function() {
+      $(".imgMember", this).css("width", "60%");
+      $(".imgMember", this).css("left", "0%");
+        $(".imgMember2", this).css("width", "60%");
+        $(".imgMember2", this).css("left", "40%");
+      //$(".overlayImg", this).css("width", "100%");
+      
+      $(".ctnNameAndUdl", this).css("top", "0px");
+      //$(".nameMember").css("opacity","0.9");
+      $(".udlGradient", this).css("width", "100%");
+      $(".titleMember", this).css("top", "131px");
+      $(".titleMember", this).css("opacity", "0.8");
+      $(".descMember", this).css("top", "147px");
+      $(".descMember", this).css("opacity", "0");
+    }
+  );
+
 	// 内容块加一屏幕的高度
 	$("#rightCenCon").height($("#rightCenCon").height() + $(window).height() + 550);
 	// 内容块加一屏幕的top值
