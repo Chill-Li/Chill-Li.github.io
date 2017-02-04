@@ -56,7 +56,7 @@ a:active {
 .imgBac{
 	width: 100%;
 	height: 100%;
-	background: url(../img/imgWorkPH@2x.jpg) no-repeat;
+	background: url(../img/bgHero@1x.webp) no-repeat center;
 	background-size: cover;
 	opacity: 1;
 	position: fixed;
@@ -67,11 +67,11 @@ a:active {
 .blackBac{
 	width: 100%;
 	height: 100%;
-	background: -webkit-linear-gradient(-180deg, #424242 0%, #424242 11%, #000000 100%);
-	background: -o-linear-gradient(-180deg, #424242 0%, #424242 11%, #000000 100%);
-	background: -moz-linear-gradient(-180deg, #424242 0%, #424242 11%, #000000 100%);
-	background: linear-gradient(-180deg, #424242 0%, #424242 11%, #000000 100%);
-	opacity: 1;
+	background: -webkit-linear-gradient(0deg, #2A2A2A 0%, #2A2A2A 11%, #000000 100%);
+	background: -o-linear-gradient(0deg, #2A2A2A 0%, #2A2A2A 11%, #000000 100%);
+	background: -moz-linear-gradient(0deg, #2A2A2A 0%, #2A2A2A 11%, #000000 100%);
+	background: linear-gradient(0deg, #2A2A2A 0%, #2A2A2A 11%, #000000 100%);
+	opacity: 0.72;
 	position: fixed;
 	z-index: 1;
 	left: 0;
@@ -151,7 +151,7 @@ a:active {
 	line-height: 118px;
 	font-size: 98px;
 	letter-spacing: 0;
-	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.1) 90%, rgba(255, 255, 255, 0));
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.96) 40%, rgba(255, 255, 255, 0.1) 90%, rgba(255, 255, 255, 0));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 	position: fixed;
@@ -163,10 +163,10 @@ a:active {
 	-o-transform:translateX(-50%);
 	top:140px;/*正常120px*/
 	opacity: 0;/*正常0.4*/
-	transition:all 0.7s ease-out 0s;
-	-moz-transition:all 0.7s ease-out 0s;
-	-webkit-transition:all 0.7s ease-out 0s;
-	-o-transition:all 0.7s ease-out 0s;
+	transition:all 0.8s 0s;
+	-moz-transition:all 0.8s 0s;
+	-webkit-transition:all 0.8s 0s;
+	-o-transition:all 0.8s 0s;
 	text-align: center;
 }
 .nav{
@@ -174,7 +174,7 @@ a:active {
 	height: 302px;
 	/*background-color: green;*/
 	position: fixed;
-	left: 0;
+	left: -12px;
 	top:311px;/*正常291px*/
 	opacity: 0;
 	transition:all 0.5s ease-out 0s;
@@ -194,11 +194,11 @@ a:active {
 	margin-top: 0;
 }
 .leftLine{
-	width: 32px;
+	width: 60px;
 	height: 1px;
-	background-color: white;
+	background: rgba(255,255,255,0.6);
 	position: absolute;
-	left: 16px;
+	left: -12px;
 	top: 11px;
 	display: none;
 }
@@ -241,11 +241,12 @@ a:active {
 .introCon{
 	width: 1024px;
 	height: 80%;
-	background: -webkit-linear-gradient(-45deg, #C6B6FF 0%, #569DFF 100%);
-	background: -o-linear-gradient(-45deg, #C6B6FF 0%, #569DFF 100%);
-	background: -moz-linear-gradient(-45deg, #C6B6FF 0%, #569DFF 100%);
-	background: linear-gradient(-45deg, #C6B6FF 0%, #569DFF 100%);
-	box-shadow: 0px 30px 60px 0px rgba(0,0,0,0.15);
+	background: -webkit-linear-gradient(-20deg, rgba(197, 181, 255, 0.68), rgba(140, 169, 255, 0.88) 50%, #569dff);
+	background: -o-linear-gradient(-20deg, rgba(197, 181, 255, 0.68), rgba(140, 169, 255, 0.88) 50%, #569dff);
+	background: -moz-linear-gradient(-20deg, rgba(197, 181, 255, 0.68), rgba(140, 169, 255, 0.88) 50%, #569dff);
+	background: linear-gradient(-20deg, rgba(197, 181, 255, 0.68), rgba(140, 169, 255, 0.88) 50%, #569dff);
+	/*background: linear-gradient(-45deg, #C6B6FF 0%, #569DFF 100%);*/
+	box-shadow: 0px 40px 60px 0px rgba(0,0,0,0.3);
 	position: fixed;
 	z-index: 2;
 	left: 128px;
@@ -283,7 +284,7 @@ a:active {
 	letter-spacing: 4px;
 }
 .intro .introWord{
-	font-family: Montserrat;
+	font-family: Montserrat, sans-serif;
 	font-weight: Bold;
 	height: 22px;
 	line-height: 22px;
@@ -342,7 +343,7 @@ a:active {
 	background-size: cover;
 }
 .imgWorkZhixing{
-    background: url(../img/imgWorkZhixing@2x.jpg);
+    background: url(../img/imgWorkZhixing@2x.webp);
     background-size: cover;
 }
 .imgWorkGenesis{
@@ -431,7 +432,7 @@ a:active {
 	height: 20px;
 	margin-top: 64px;
 	font-size: 20px;
-	font-family: Montserrat;
+	font-family: Montserrat, sans-serif;
 	font-weight: Bold;
 	line-height: 20px;
 }
@@ -442,6 +443,8 @@ a:active {
 /*团队块盒子*/
 .teamCon{
 }
+
+
 
 /*v1.1版团队板块>>>>>>>*/
 .ctnMemberList{
@@ -454,33 +457,34 @@ a:active {
   width: 768px;
   height: 216px;
   background-color: #FFF;
-	box-shadow: 0 30px 60px  rgba(0, 0, 0, 0.15);
-  margin-bottom: 20px;
+  box-shadow: 0 30px 60px  rgba(0, 0, 0, 0.15);
+  margin-bottom: 24px;
   overflow: hidden; /*用作子元素的蒙版*/
 }
 .ctnMember:last-child{
  margin-bottom: 0px;
 }
 
-.imgMember
-{ 
+.imgMember{ 
   float:left;
-  width:60%;
+  width:50%;
   height:100%;
-  background: url("https://www.sweetpunk.com/Public/Files/feed/select_people_15_501feeb4d0_5427de9694_9e23d469a8.jpg") center;
-  background-size:cover;
   position: absolute;
   left:0%;
   transition: all 0.5s;
 }
+
 .overlayImg {
   float:left;
   position:absolute;
   left:0;
   top:0;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(to left, #ffffff, #ffffff 40%, rgba(255, 255, 255, 0.1)), linear-gradient(119deg, rgba(198, 182, 255, 0.5), rgba(86, 157, 255, 0.8) 50%, rgba(86, 157, 255, 0.8));
+  width: 100%;
+  height: 100%;
+	background: 
+	linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff 50%, #ffffff), 
+/*	linear-gradient(119deg, rgba(198, 182, 255, 0.9), rgba(86, 157, 255, 0.5) 60%, rgba(86, 157, 255, 0.5));
+*/	linear-gradient(119deg, rgba(198, 182, 255, 0.25), rgba(86, 157, 255, 0.8) 50%, rgba(86, 157, 255, 0.8));
   transition: all 0.5s;
 }
 .ctnNameAndUdl{
@@ -499,7 +503,7 @@ a:active {
   line-height: 55px;
 	opacity: 0.9;
 	font-family: Montserrat, sans-serif;
-	font-size: 40px;
+	font-size: 36px;
 	font-weight: Bold;
 	color: #000000;
   transition: all 0.5s;
@@ -537,26 +541,48 @@ position: absolute;
   transition: all 0.5s;
 }
 
-.imgMember2
-{ width: 60%;
-  left: 41%;
+.imgMemberB { 
+	width: 60%;
+	left: 41%;
 }
-.overlayImg2 {
-width:62%;
+.imgMember1{
+  background: url(../img/chill.jpg) center no-repeat;
+  background-size:cover;
+}
+.imgMember2{
+  background: url(../img/skyshit.jpg) center no-repeat;
+  background-size:cover;
+}
+.imgMember3{
+  background: url(../img/haiyan.jpg) center no-repeat;
+  background-size:cover;
+}
+.imgMember4{
+  background: url(../img/van.jpg) center no-repeat;
+  background-size:cover;
+}
+
+.overlayImgB {
+width:63%;
 left:38%;
-	background: linear-gradient(to right, #ffffff, #ffffff 4%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0)), linear-gradient(119deg, rgba(198, 182, 255, 0.5), rgba(86, 157, 255, 0.8));
+	background: 
+	linear-gradient(to right, #ffffff, #ffffff 5%, rgba(255, 255, 255, 0.56) 50%, rgba(255, 255, 255, 0)), 
+	linear-gradient(119deg, rgba(198, 182, 255, 0.5), rgba(86, 157, 255, 0.8));
 }
-.ctnNameAndUdl2{
+.ctnNameAndUdlB{
   left: 40px;
 }
-.titleMember2 {
+.titleMemberB {
   left: 40px;
 }
-.descMember2 {
+.descMemberB {
   left: 40px;
 }
 
 /*v1.1版团队板块<<<<<<<<<*/
+
+
+
 
 .teamTag{
 	width: 768px;
@@ -593,9 +619,9 @@ left:38%;
 }
 .teamMemName{
 	font-family: Avenir, 'PingFang SC', 'Microsoft YaHei', sans-serif;
-	height: 20px;
-	line-height: 20px;
-	font-size: 14px;
+	height: 26px;
+	line-height: 26px;
+	font-size: 18px;
 	font-weight: 600;
 	color: black;
 }
@@ -610,6 +636,7 @@ left:38%;
 }
 .teamMemJob{
 	height: 22px;
+	line-height: 22px;
 	margin-top: 6px;
 	font-size: 12px;
 	/*-webkit-text-stroke: 0.2px #000000;*/
@@ -617,7 +644,6 @@ left:38%;
 	letter-spacing: 0.2px;
 	color: black;
 	opacity: 0.8;
-	line-height: 22px;
 }
 .teamMemWord{
 	margin-top: 24px;
@@ -682,5 +708,5 @@ left:38%;
 	width: 50%; 
 	/*background-color: red;*/
 	float: left;
-	padding: 0 80px 0 0;
+	padding: 0 40px 0 40px;
 }
